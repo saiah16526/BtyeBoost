@@ -1,0 +1,64 @@
+{
+  "2024-05-01": {
+    "15:35": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:35",
+      "Duration": 0.05
+    },
+    "15:36": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:36",
+      "Duration": 0.05
+    }
+  },
+  "2024-05-02": {
+    "15:35": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:35",
+      "Duration": 0.05
+    },
+    "15:36": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:36",
+      "Duration": 0.05
+    }
+  },
+  "2024-05-04": {
+    "16:0": {
+      "lesson": "Qt",
+      "Category": "C++",
+      "TO": "16:05",
+      "Duration": 0.1
+    },
+    "16:38": {
+      "lesson": "Tkinter",
+      "Category": "Python",
+      "TO": "16:39",
+      "Duration": 0.3
+    }
+  },
+  "2024-05-05": {
+    "7:45": {
+      "lesson": "Tauri",
+      "Category": "Rust",
+      "TO": "7:46",
+      "Duration": 1.0
+    },
+    "7:47": {
+      "lesson": "Entity Framework",
+      "Category": "C#",
+      "TO": "7:49",
+      "Duration": 2.0
+    },
+    "7:50": {
+      "lesson": "MySQL",
+      "Category": "SQL",
+      "TO": "7:51",
+      "Duration": 1.0
+    }
+  }
+}

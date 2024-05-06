@@ -1,0 +1,11 @@
+{
+  "BORDER_COLOR": "#FFFFFF",
+  "BACKGROUND": "#121212",
+  "FONT_FAMILY": [
+    "JetBrains Mono",
+    "unionagrochem",
+    "Poppins"
+  ],
+  "PERCENTAGE_BACKGROUND": "#242424",
+  "PROGRESS_THEME": "#1976D2"
+}

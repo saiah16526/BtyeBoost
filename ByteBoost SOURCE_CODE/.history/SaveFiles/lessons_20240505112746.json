@@ -1,0 +1,162 @@
+{
+  "HTML/CSS": {
+    "Bootstrap": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Foundation": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Sass": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "LESS": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "JavaScript": {
+    "Node.js": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "React": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Angular": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Vue.js": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Express.js": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Electron": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "C#": {
+    "ASP.NET": {
+      "duration": 0,
+      "total_count": 0
+    },
+    ".NET Core": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Entity Framework": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Unity": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "C++": {
+    "Qt": {
+      "duration": 0.016666666666666666,
+      "total_count": 1
+    },
+    "Boost": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Unreal Engine": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "Rust": {
+    "Tauri": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Rocket": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Actix": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "Python": {
+    "Flask": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "TensorFlow": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "PyTorch": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "NumPy": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Tkinter": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "Java": {
+    "Spring": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Hibernate": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "Go(Golang)": {
+    "Gin": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Echo": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "SQL": {
+    "MySQL": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "PostgreSQL": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "SQLite": {
+      "duration": 0,
+      "total_count": 0
+    }
+  },
+  "Mobile app dev't": {
+    "Swift": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Kotlin": {
+      "duration": 0,
+      "total_count": 0
+    },
+    "Flutter": {
+      "duration": 0,
+      "total_count": 0
+    }
+  }
+}

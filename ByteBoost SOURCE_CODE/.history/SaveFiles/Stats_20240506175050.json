@@ -1,0 +1,28 @@
+{
+  "2024-05-06": {
+    "17:11": {
+      "lesson": "Qt",
+      "Category": "C++",
+      "TO": "17:11",
+      "Duration": 0.03333333333333333
+    },
+    "17:15": {
+      "lesson": "Qt",
+      "Category": "C++",
+      "TO": "17:15",
+      "Duration": 0.08333333333333334
+    },
+    "17:34": {
+      "lesson": "TensorFlow",
+      "Category": "Python",
+      "TO": "17:34",
+      "Duration": 0.0
+    },
+    "17:50": {
+      "lesson": "TensorFlow",
+      "Category": "Python",
+      "TO": "17:50",
+      "Duration": 54.333333333333336
+    }
+  }
+}

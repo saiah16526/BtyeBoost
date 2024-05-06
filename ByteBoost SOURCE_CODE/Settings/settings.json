@@ -1,0 +1,14 @@
+{
+  "BORDER_COLOR": "#FFFFFF",
+  "BACKGROUND": "#121212",
+  "FONT_FAMILY": [
+    "JetBrains Mono",
+    "Warzone",
+    "Poppins"
+  ],
+  "PERCENTAGE_BACKGROUND": "#242424",
+  "PROGRESS_THEME": "#1976D2",
+  "TASKS": {
+    "2024-05-06": 9
+  }
+}

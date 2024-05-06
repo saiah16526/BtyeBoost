@@ -1,0 +1,30 @@
+{
+  "2024-05-02": {
+    "15:35": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:35",
+      "Duration": 0.05
+    },
+    "15:36": {
+      "lesson": "Bootstrap",
+      "Category": "HTML/CSS",
+      "TO": "15:36",
+      "Duration": 0.05
+    }
+  },
+  "2024-05-04": {
+    "16:0": {
+      "lesson": "Qt",
+      "Category": "C++",
+      "TO": "16:05",
+      "Duration": 0.1
+    },
+    "16:38": {
+      "lesson": "Tkinter",
+      "Category": "Python",
+      "TO": "16:39",
+      "Duration": 0.3
+    }
+  }
+}

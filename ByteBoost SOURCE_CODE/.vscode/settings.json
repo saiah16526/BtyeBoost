@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "columnspan",
+        "customtkinter",
+        "highlightthickness",
+        "relheight",
+        "relwidth",
+        "relx",
+        "rowspan",
+        "ttkbootstrap",
+        "yscrollcommand"
+    ],
+    "python.analysis.extraPaths": [
+        "./Scripts"
+    ]
+}
