@@ -18,47 +18,53 @@ class ProgressCanvas(ctk.CTkCanvas):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)  # Initialize the canvas with the provided master widget and additional keyword arguments
         self.SETTINGS = load_settings()
+        self.progress_meter = ProgressMeter(self)
+    
+class ProgressMeter:
+    def __init__(self, parent):
+        self.SETTINGS = load_settings()
+        self.parent = parent
+        self.padding_inline = 100
+        self.padding_block = 100
+        self.radius = 12
+        self.coordinates = (5, 150)
 
-    def draw_progress_meter(self, percentage):
-        # Draw the outer circular progress meter background
-          # Define parameters for the progress meter
-        padding_inline = 90
-        padding_block = 80
-        radius = 12
-        coordinates = (30, 170)
-        per = percentage.split("%")
-        extent = (290 * (int(per[0]))) / 100
-        # Draw the outer circular progress meter background (gray)
-        self.create_arc(
-            coordinates[0] + padding_inline,
-            coordinates[0] + padding_block,
-            coordinates[1] + padding_inline,
-            coordinates[1] + padding_block,
-            fill=self.SETTINGS["PERCENTAGE_BACKGROUND"],  # Gray color
+    def update(self, percentage):
+        self.parent.delete("all")  # Clear previous drawings
+        percentage =int( (percentage.split("%"))[0])
+        extent = (290 * (percentage)) /100
+
+        # Draw outer circular background
+        self.parent.create_arc(
+            self.coordinates[0] + self.padding_inline,
+            self.coordinates[0] + self.padding_block,
+            self.coordinates[1] + self.padding_inline,
+            self.coordinates[1] + self.padding_block,
+            fill = self.SETTINGS["PERCENTAGE_BACKGROUND"],
             start=30,
-            extent=290,  # Define the extent of the arc (full circle minus 40 degrees)
-            outline=self.SETTINGS["BACKGROUND"]  # Background color of the canvas
+            extent=290,
+            outline=self.SETTINGS["BACKGROUND"]
         )
-        
-        # Draw the inner circular progress meter (border)
-        self.create_arc(
-            coordinates[0] + padding_inline,
-            coordinates[0] + padding_block,
-            coordinates[1] + padding_inline,
-            coordinates[1] + padding_block,
-            fill=self.SETTINGS["PROGRESS_THEME"],  # Border color
+
+        # Draw inner progress arc
+        self.parent.create_arc(
+            self.coordinates[0] + self.padding_inline,
+            self.coordinates[0] + self.padding_block,
+            self.coordinates[1] + self.padding_inline,
+            self.coordinates[1] + self.padding_block,
+            fill=self.SETTINGS["PROGRESS_THEME"],
             start=30,
-            extent=extent  # Define the extent of the arc (half circle minus 40 degrees)
+            extent=extent
         )
-        
-        # Draw a small circular indicator (dot) in the progress meter
-        self.create_oval(
-            coordinates[0] + padding_inline + radius,
-            coordinates[0] + padding_block + radius,
-            coordinates[1] + padding_inline - radius,
-            coordinates[1] + padding_block - radius,
-            fill=self.SETTINGS["BACKGROUND"],  # Background color
-            outline=self.SETTINGS["BACKGROUND"]  # Background color (no visible outline)
+
+        # Draw circular indicator
+        self.parent.create_oval(
+            self.coordinates[0] + self.padding_inline + self.radius,
+            self.coordinates[0] + self.padding_block + self.radius,
+            self.coordinates[1] + self.padding_inline - self.radius,
+            self.coordinates[1] + self.padding_block - self.radius,
+            fill=self.SETTINGS["BACKGROUND"],
+            outline=self.SETTINGS["BACKGROUND"]
         )
 
 class DailyProgressApp:
@@ -79,7 +85,7 @@ class DailyProgressApp:
         self.canvas_progress = self.frame.create_canvas(background=self.SETTINGS["BACKGROUND"], bd=0, highlightthickness=0)
 
         # Draw the progress meter on the canvas
-        self.canvas_progress.draw_progress_meter("0%")
+        self.canvas_progress.progress_meter.update("0%")
 
         # Define label configurations for daily progress information
         label_configs = [
@@ -110,7 +116,7 @@ class DailyProgressApp:
             self.total.set(settings_dict["TASKS"][current_date])
             self.done.set(len(tasks))
             self.percentage.set(f"{int(((len(tasks))/settings_dict["TASKS"][current_date]) * 100)}%")
-        self.canvas_progress.draw_progress_meter(self.percentage.get())
+        self.canvas_progress.progress_meter.update(self.percentage.get())
         self.frame.after(1000, lambda: self.update_progress())
         
     def provide_daily_tasks(self):
